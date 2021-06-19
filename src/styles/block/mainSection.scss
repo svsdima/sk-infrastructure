@@ -1,0 +1,16 @@
+
+.main-slider {
+        height: 100vh;
+    &-slide {
+        height: 100vh;
+    }
+}
+.swiper-pagination-bullet {
+    background-color: #fff;
+    &-active {
+        background-color: $main-color;
+    }
+}
+
+@import './mainComponents/mainHeader';
+@import './mainComponents/mainPrinciples';

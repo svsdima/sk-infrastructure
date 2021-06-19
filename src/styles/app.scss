@@ -1,0 +1,28 @@
+$main-color: #E4B564;
+$second-color: #D6AF76;
+
+@import './base/_libs';
+@import './base/_fonts';
+@import './base/_global';
+
+
+* {
+    font-family: Circe;
+    color: #fff;
+}
+body {
+    background-color: #0E0E0E;
+}
+img {
+    display: inline-block;
+    width: 100%;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+}
+
+@import './block/header';
+@import './block/mainSection';
