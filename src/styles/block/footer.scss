@@ -1,0 +1,32 @@
+.footer {
+    height: 100vh;
+    background: url('/img/footer/footer-bg.png') center (center / cover) no-repeat;
+    &_wrapper {
+        padding-top: 150px;
+    }
+    .descr {
+        &_title {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 28px;
+        }
+        &_list {
+            list-style-type: none;
+        }
+        &_link {
+            padding-bottom: 30px;
+            a {
+                text-decoration: none;
+            }
+            i {
+                color: $main-color;
+            }
+            span {
+                padding-left: 15px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+}

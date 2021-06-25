@@ -1,5 +1,10 @@
 $main-color: #E4B564;
 $second-color: #D6AF76;
+$background-color: rgba(#B18037, 0.80);
+$dark-background: #151515;
+$checked-color: #7a6237;
+$transition: all .3s ease;
+$text-color: #fff;
 
 @import './base/_libs';
 @import './base/_fonts';
@@ -8,7 +13,7 @@ $second-color: #D6AF76;
 
 * {
     font-family: Circe;
-    color: #fff;
+    color: $text-color;
 }
 body {
     background-color: #0E0E0E;
@@ -25,4 +30,8 @@ img {
 }
 
 @import './block/header';
+@import './block/menu';
 @import './block/mainSection';
+@import './block/projects';
+@import './block/form';
+@import './block/footer';
