@@ -1,5 +1,5 @@
 import React from 'react';
-import Contacts from './Contacts';
+import Address from './Address';
 import Form from './Form';
 
 const Footer = () => {
@@ -7,7 +7,8 @@ const Footer = () => {
         <div className="footer">
             <div className="container">
                 <div className="footer_wrapper">
-                    <Contacts/>
+                    <h2 className="title">Работаем по всей России</h2>
+                    <Address/>
                     <Form/>
                 </div>
             </div>

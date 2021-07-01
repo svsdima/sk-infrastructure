@@ -20,7 +20,12 @@
     color: $main-color;
     cursor: pointer;
     font-size: 18px;
+    text-decoration: none;
     line-height: 30px;
+    a {
+        color: $main-color;
+        text-decoration: none;
+    }
     &-contacts {
         margin-top: 40px;
         a {
@@ -30,5 +35,43 @@
     }
     &-projects {
         width: 180px;
+    }
+}
+.links {
+    color: $navigation;
+    a, 
+    span {
+        color: $navigation;
+    } 
+    a {
+        padding-right: 10px;
+    }
+    span {
+        padding-left: 10px;
+    }
+}
+.descr {
+    &_title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    &_list {
+        list-style-type: none;
+    }
+    &_link {
+        padding-bottom: 30px;
+        a {
+            text-decoration: none;
+        }
+        i {
+            color: $main-color;
+        }
+        span {
+            padding-left: 15px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+        }
     }
 }

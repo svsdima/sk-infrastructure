@@ -12,37 +12,37 @@ const Menu = () => {
                 <li className="menu_link" onClick={toggleMenu}>
                     <Link to='/' >Главная</Link>
                 </li>
-                <li className="menu_link">
+                <li className="menu_link" onClick={toggleMenu}>
                     <Link to='/' >Компания</Link>
                 </li>
-                <li className="menu_link menu_link_subtitle">
-                    <Link to='/' >Вакансии</Link>
+                <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
+                    <Link to='/vacancies' >Вакансии</Link>
                 </li>
-                <li className="menu_link">
+                <li className="menu_link" onClick={toggleMenu}>
                     <Link to='/' >Услуги</Link>
                 </li>
-                <li className="menu_link menu_link_subtitle">
+                <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
                     <Link to='/' >Сети водоснабжения</Link>
                 </li>
-                <li className="menu_link menu_link_subtitle">
+                <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
                     <Link to='/' >Водоотведение и канализация</Link>
                 </li>
-                <li className="menu_link menu_link_subtitle">
+                <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
                     <Link to='/' >Наружные тепловые сети</Link>
                 </li>
-                <li className="menu_link menu_link_subtitle">
+                <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
                     <Link to='/' >Монтаж Ж/Б конструкции</Link>
                 </li>
-                <li className="menu_link menu_link_subtitle">
+                <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
                     <Link to='/' >Благоустройство территорий</Link>
                 </li>
-                <li className="menu_link">
-                    <Link to='/' >Проекты</Link>
+                <li className="menu_link" onClick={toggleMenu}>
+                    <Link to='/projects' >Проекты</Link>
                 </li>
                 <li className="menu_link" onClick={toggleMenu}>
                     <Link to='/contacts' >Контакты</Link>
                 </li>
-                <li className="menu_link">
+                <li className="menu_link" onClick={toggleMenu}>
                     <Link to='/' >Политика конфиденциальности</Link>
                 </li>
             </ul>

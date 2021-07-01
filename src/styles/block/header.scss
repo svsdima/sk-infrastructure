@@ -2,7 +2,7 @@
     z-index: 10;
     max-width: 1600px;
     width: 90%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -44,7 +44,12 @@
             left: 0;
         }
     }
-    &-right {
+    &_logo {
+        width: 220px;
+        margin-left: 30px;
+    }
+    &_left,
+    &_right {
         display: flex;
         justify-content: space-between;
         align-items: center;

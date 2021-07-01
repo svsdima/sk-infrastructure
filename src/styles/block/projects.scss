@@ -40,13 +40,21 @@
                 background-color: $background-color;
             }
             .clients-projects_logo {
-                top: 15%;
+                top: 20%;
                 transform: translateX(-50%) translateY(-15%);
             }
             .clients-projects_text {
                 opacity: 1;
                 top: 50%;
                 transform: translateX(-50%);
+            }
+            .project_complete,
+            .project_not-complete {
+                padding: 3px 13px;
+                width: auto;
+                span {
+                    display: inline;
+                }
             }
         }
     }
@@ -63,14 +71,53 @@
         opacity: 0;
         transition: all .3s ease;
         position: absolute;
+        width: 80%;
         top: 110%;
         left: 50%;
         transform: translateX(-50%);
-        text-align: left;
+        text-align: center;
         font-size: 22px;
         line-height: 28px;
         span {
             font-weight: 700;
         }
+    }
+}
+.projects {
+    &_wrapper {
+        margin: 150px 0;
+    }
+}
+.project {
+    &_complete,
+    &_not-complete {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 19px;
+        height: 19px;
+        padding: 3px 3px;
+        border-radius: 100px;
+        overflow: hidden;
+        transition: all .3s ease;
+        z-index: 5;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            transition: all .3s ease;
+            // opacity: 0;
+            display: none;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+    &_complete {
+        background-color: $project-complete;
+    }
+    &_not-complete {
+        background-color: $project-not-complete;
     }
 }

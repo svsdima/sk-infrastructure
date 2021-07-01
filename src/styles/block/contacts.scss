@@ -1,0 +1,9 @@
+.contacts {
+    margin: 150px 0 80px 0;
+    background: bottom right no-repeat;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

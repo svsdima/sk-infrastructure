@@ -16,7 +16,7 @@ import SwiperCore, {
 
 import MainHeader from "./mainComponents/MainHeader";
 import MainPrinciples from "./mainComponents/MainPrinciples";
-import ProjectsList from "./ProjectsList";
+import MainProjects from "./mainComponents/MainProjects";
 
 // install Swiper modules
 SwiperCore.use([Mousewheel,Pagination]);
@@ -42,7 +42,7 @@ const MainSection = () => {
             <MainPrinciples/>
           </SwiperSlide>
           <SwiperSlide className="main-slider-slide">
-            <ProjectsList/>
+            <MainProjects/>
           </SwiperSlide>
           <SwiperSlide className="main-slider-slide">
             <Footer/>

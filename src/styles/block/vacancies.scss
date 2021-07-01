@@ -1,0 +1,51 @@
+.vacancies {
+    margin-top: 150px;
+    .title {
+        padding-bottom: 0;
+    }
+    &_left {
+        background-color: #0E0E0E;
+        &_bg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: right bottom no-repeat;
+            min-height: 830px;
+            text-align: left;
+        }
+    }
+    &_right {
+        background-color: #151515;
+        &_bg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            background: left bottom no-repeat;
+            min-height: 830px;
+            text-align: left;
+        }
+    }
+    &_list {
+        padding-left: 10px;
+        max-width: 730px;
+        margin: 0;
+    }
+    &_item {
+        list-style-type: none;
+        position: relative;
+        font-size: 16px;
+        line-height: 28px;
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 250px;
+            width: 7px;
+            height: 7px;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $main-color;
+        }
+    }
+}

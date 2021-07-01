@@ -5,6 +5,9 @@ $dark-background: #151515;
 $checked-color: #7a6237;
 $transition: all .3s ease;
 $text-color: #fff;
+$project-complete: #69CE6D;
+$project-not-complete: #E4B564;
+$navigation: #606060;
 
 @import './base/_libs';
 @import './base/_fonts';
@@ -33,5 +36,7 @@ img {
 @import './block/menu';
 @import './block/mainSection';
 @import './block/projects';
+@import './block/vacancies';
+@import './block/contacts';
 @import './block/form';
 @import './block/footer';
