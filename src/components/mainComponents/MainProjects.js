@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import projects from '../../projects';
+import { projects } from '../../data';
+import ScrollOnClick from '../functions/ScrollOnClick';
 import ProjectItem from '../ProjectItem';
 
 const MainProjects = () => {
@@ -11,7 +12,7 @@ const MainProjects = () => {
                 <div className="clients-projects_wrapper">
                     <div className="clients-projects_up">
                         <h2 className="title">Наши клиенты и проекты</h2>
-                        <Link to='/projects' className="btn btn-projects" >Все проекты</Link>
+                        <Link to='/projects' onClick={ScrollOnClick} className="btn btn-projects" >Все проекты</Link>
                     </div>
                     <div className="clients-projects_list">
                         {projectsPreview.map(project => (

@@ -42,7 +42,7 @@ const MainHeader = () => {
                     </div>
                 </div>
                 <ul className="main-header_work">
-                    <div className="subtitle">Полный комплекс работ:</div>
+                    <h3 className="subtitle">Полный комплекс работ:</h3>
                     <li>проектирование</li>
                     <li>согласование</li>
                     <li>строительно-монтажные работы</li>

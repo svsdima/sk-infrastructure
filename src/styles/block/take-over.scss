@@ -1,0 +1,47 @@
+.take-over {
+    background-color: $second-dark-background;
+    padding: 100px 0 100px 0;
+    &_item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 420px;
+        padding: 0 50px;
+    }
+    &_descr {
+        text-align: left;
+        max-width: 170px;
+    }
+    &_img {
+        width: 75px;
+        height: 75px;
+        margin-right: 40px;
+    }
+    &_arrow {
+        margin-left: auto;
+    }
+    &_arrow-down {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px 0;
+    }
+    &_arrow,
+    &_arrow-down {
+        width: 50px;
+        height: 50px;
+    }
+    &_list {
+        &-up,
+        &-down {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-center {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+}

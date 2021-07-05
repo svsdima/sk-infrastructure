@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import toggleMenu from './functions/ToggleFunction';
 import Menu from './Menu';
 
@@ -12,7 +13,9 @@ const Header = () => {
                         <span></span>
                     </div>
                     <div className="header_logo">
-                        <img className="header_logo_img" src="../../img/main/header/main-logo.svg" alt="main-logo" />
+                        <Link to='/' >
+                            <img className="header_logo_img" src="../../img/main/header/main-logo.svg" alt="main-logo" />
+                        </Link> 
                     </div>
                 </div>
                 <div className='header_right'>

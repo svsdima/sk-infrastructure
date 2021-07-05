@@ -1,7 +1,6 @@
 .footer {
-    height: 100vh;
     background: url('/img/footer/footer-bg.png') center (center / cover) no-repeat;
     &_wrapper {
-        padding-top: 150px;
+        padding: 100px 0 80px 0;
     }
 }

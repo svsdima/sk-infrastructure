@@ -29,7 +29,7 @@ const ProjectItem = ({ project }) => {
     }
 
     return (
-        <div className="clients-projects_item" style={{ backgroundImage: `url(${project.background})` }}>
+        <div className="clients-projects_item" style={{ backgroundImage: `url(${project.background})`}}>
             <div className="clients-projects_item_wrapper">
                 <CheckProject isCompleted={true}/>
                 <div className="clients-projects_logo">

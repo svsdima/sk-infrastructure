@@ -11,6 +11,17 @@
         background-color: $main-color;
     }
 }
+.header-slider-container {
+    .clients-projects {
+        height: 100vh;
+    }
+    .footer {
+        height: 100vh;
+        &_wrapper {
+            padding: 150px 0 20px 0;
+        }
+    }
+}
 
 @import './mainComponents/mainHeader';
 @import './mainComponents/mainPrinciples';

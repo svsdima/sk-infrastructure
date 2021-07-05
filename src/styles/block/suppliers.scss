@@ -1,0 +1,37 @@
+.suppliers {
+    padding: 100px 0 140px 0;
+    background-color: $second-dark-background;
+    .title {
+        font-weight: 700;
+        margin: 0;
+        max-width: 700px;
+        line-height: 60px;
+        padding: 0;
+    }
+    .subtitle {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        span {
+            font-weight: 700;
+        }
+    }
+    &_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 60px;
+        margin-top: 120px;
+    }
+    &_item {
+        width: 260px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}

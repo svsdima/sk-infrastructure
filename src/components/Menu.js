@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ScrollOnClick from './functions/ScrollOnClick';
 import toggleMenu from './functions/ToggleFunction';
 
 const Menu = () => {
@@ -22,7 +23,7 @@ const Menu = () => {
                     <Link to='/' >Услуги</Link>
                 </li>
                 <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
-                    <Link to='/' >Сети водоснабжения</Link>
+                    <Link to='/water-supply' >Сети водоснабжения</Link>
                 </li>
                 <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
                     <Link to='/' >Водоотведение и канализация</Link>

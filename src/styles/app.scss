@@ -2,6 +2,7 @@ $main-color: #E4B564;
 $second-color: #D6AF76;
 $background-color: rgba(#B18037, 0.80);
 $dark-background: #151515;
+$second-dark-background: #0E0E0E;
 $checked-color: #7a6237;
 $transition: all .3s ease;
 $text-color: #fff;
@@ -19,7 +20,7 @@ $navigation: #606060;
     color: $text-color;
 }
 body {
-    background-color: #0E0E0E;
+    background-color: $dark-background;
 }
 img {
     display: inline-block;
@@ -38,5 +39,10 @@ img {
 @import './block/projects';
 @import './block/vacancies';
 @import './block/contacts';
+@import './block/take-over';
+@import './block/suppliers';
+@import './block/technics';
+@import './block/water-supply';
+@import './block//doing-work.scss';
 @import './block/form';
 @import './block/footer';

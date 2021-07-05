@@ -39,12 +39,15 @@
 }
 .links {
     color: $navigation;
+    :first-child {
+        padding-left: 0;
+    }
     a, 
     span {
         color: $navigation;
     } 
     a {
-        padding-right: 10px;
+        padding: 0 10px;
     }
     span {
         padding-left: 10px;
@@ -72,6 +75,17 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 28px;
+        }
+    }
+}
+.header-slider-container {
+    .clients-projects {
+        height: 100vh;
+    }
+    .footer {
+        height: 100vh;
+        &_wrapper {
+            padding: 150px 0 20px 0;
         }
     }
 }

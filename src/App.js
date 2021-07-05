@@ -5,6 +5,7 @@ import Header from './components/Header';
 import MainSection from './components/MainSection';
 import Projects from './components/Projects';
 import Vacancies from './components/Vacancies';
+import WaterSupply from './components/WaterSupply';
 import './styles/app.scss';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/contacts" component={Contacts} />
         <Route path="/projects" component={Projects} />
         <Route path="/vacancies" component={Vacancies} />
+        <Route path="/water-supply" component={WaterSupply} />
         <Route path="/" component={MainSection} exact />
     </Router>
   );

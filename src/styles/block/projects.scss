@@ -1,7 +1,11 @@
 .clients-projects {
-    height: 100vh;
+    background-color: $second-dark-background;
+    .project_not-complete,
+    .project_complete {
+        display: none;
+    }
     &_wrapper {
-        padding-top: 170px;
+        padding-top: 100px;
     }
     &_up {
         display: flex;

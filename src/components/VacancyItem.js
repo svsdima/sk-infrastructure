@@ -6,7 +6,7 @@ const VacancyItem = ({ vacancy }) => {
         return (
             <div className="vacancies_left" >
                <div className="container">
-                    <div className="vacancies_left_bg" style={{ backgroundImage: `url(${vacancy.img})` }}>
+                    <div className="vacancies_left_bg" style={{ backgroundImage: `url(${vacancy.img})`}}>
                         <div>
                             <h3 className="descr_title">{vacancy.name}</h3>
                             <h4 className="descr_subtitle">Должностные обязанности:</h4>
@@ -31,7 +31,7 @@ const VacancyItem = ({ vacancy }) => {
         return (
             <div className="vacancies_right">
                 <div className="container">
-                    <div className="vacancies_right_bg" style={{ backgroundImage: `url(${vacancy.img})` }}>
+                    <div className="vacancies_right_bg" style={{ backgroundImage: `url(${vacancy.img})`}}>
                         <div>
                             <h3 className="descr_title">{vacancy.name}</h3>
                             <h4>Должностные обязанности:</h4>
