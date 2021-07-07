@@ -19,7 +19,7 @@
     &_list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-column-gap: 0;
         grid-row-gap: 0;
     }
@@ -90,6 +90,13 @@
 .projects {
     &_wrapper {
         margin: 150px 0;
+    }
+    .clients-projects_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
     }
 }
 .project {

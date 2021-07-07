@@ -26,10 +26,10 @@ const Menu = () => {
                     <Link to='/water-supply' >Сети водоснабжения</Link>
                 </li>
                 <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
-                    <Link to='/' >Водоотведение и канализация</Link>
+                    <Link to='/sewerage' >Водоотведение и канализация</Link>
                 </li>
                 <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
-                    <Link to='/' >Наружные тепловые сети</Link>
+                    <Link to='/heating-network' >Наружные тепловые сети</Link>
                 </li>
                 <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
                     <Link to='/' >Монтаж Ж/Б конструкции</Link>

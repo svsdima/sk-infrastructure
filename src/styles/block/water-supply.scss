@@ -1,3 +1,39 @@
 .water-supply {
-    margin-top: 150px;
+    &_wrapper {
+        display: grid;
+        margin: 0 0 70px 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+    &_item {
+        position: relative;
+        cursor: pointer;
+        transition: $transition;
+        height: 470px;
+        width: 470px;
+        &_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            width: 100%;
+            height: 100%;
+            transition: $transition;
+            overflow: hidden;
+        }
+        &:hover {
+            .water-supply_item_wrapper {
+                background-color: rgba($main-color, 0.8);
+            }
+        }
+    }
+    &_title {
+        transition: $transition;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    &_img {
+        transition: $transition;
+    }
+
 }

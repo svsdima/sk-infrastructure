@@ -285,3 +285,21 @@ export const technics = [
         position: 'right',
     },
 ];
+
+export const waterSupply = [
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Земляные работы',
+        img: '/img/water-supply/1-excavation.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Прокладка ПНД труб',
+        img: '/img/water-supply/2-plumbing.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Установка запорной арматуры',
+        img: '/img/water-supply/3-installation.jpg',
+    },
+];

@@ -1,0 +1,18 @@
+.timing {
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_input {
+        width: 710px;
+    }
+    &_range {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            margin: 0 10px;
+        }
+    }
+}
