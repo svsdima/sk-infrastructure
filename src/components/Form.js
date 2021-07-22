@@ -32,12 +32,12 @@ const Form = () => {
                             <div className="file_preview"></div>
                         </div>
                     </div>
-                    <button type="submit" className="btn">Перезвоните мне</button>
+                    <button type="submit" className="btn"><span>Перезвоните мне</span></button>
                 </div>
                 <div className="checkbox">
                     <input id="formAgreement" type="checkbox" name="agreement" className="checkbox_input" />
                     <label htmlFor="formAgreement" className="checkbox_label" >
-                        Я соглашаюсь с <Link to="/">политикой конфиденциальности</Link>*
+                        <span>Я соглашаюсь с <Link to="/">политикой конфиденциальности</Link>*</span>
                     </label>
                 </div>
             </form>

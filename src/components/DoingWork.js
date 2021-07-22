@@ -36,7 +36,7 @@ const DoingWork = () => {
                 </div>
                 <div className="doing-work_down">
                     <div className="doing-work_subtitle">Являемся членом СРО «Строительство. Инженерные системы»</div>
-                    <button className="btn">Ознакомиться с выпиской</button>
+                    <button className="btn"><span>Ознакомиться с выпиской</span></button>
                 </div>
             </div>
             

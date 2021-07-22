@@ -1,30 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { sewerages } from '../data';
+import { landscapings } from '../data';
 import DoingWork from './DoingWork';
 import Footer from './Footer';
+import LandscapingItem from './LandscapingItem';
 import MainProjects from './mainComponents/MainProjects';
-import SewerageItem from './SewerageItem';
 import Suppliers from './Suppliers';
 import Technics from './Technics';
 import Timing from './Timing';
 import WeTakeOver from './WeTakeOver';
 
-const Sewerage = () => {
+const Landscaping = () => {
     return (
         <div className="sewerage">
             <div className="container">
                 <div className="links">
                         <Link  to="/">Главная</Link>/
                         <Link  to="/">Услуги</Link>/
-                        <span>Водоотведение и канализация</span>
+                        <span>Благоустройство территорий</span>
                 </div>
-                <h2 className="title">Водоотведение и канализация</h2>
-                <h3 className="subtitle">Строительная компания "Инфраструктура" предлагает услуги монтажа систем водоотведения и канализации, включая:</h3>
-                <div className="sewerage_wrapper">
-                    {sewerages.map(sewerage => (
-                        <div key={sewerage._id}>
-                            <SewerageItem sewerage={sewerage} />
+                <h2 className="title">Благоустройство территорий</h2>
+                <h3 className="subtitle">Строительная компания "Инфраструктура" осуществляет полный перечень работ в области благоустройства территории:</h3>
+                <div className="landscaping_wrapper">
+                    {landscapings.map(landscaping => (
+                        <div key={landscaping._id}>
+                            <LandscapingItem landscaping={landscaping} />
                         </div>
                     ))}
                 </div>
@@ -40,4 +40,4 @@ const Sewerage = () => {
     )
 }
 
-export default Sewerage
+export default Landscaping

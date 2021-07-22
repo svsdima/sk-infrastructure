@@ -1,0 +1,63 @@
+.popup {
+    // width: 617px;
+    // height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #000000;
+    opacity: 0;
+    z-index: -5;
+    transition: $transition;
+    &_title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 17px;
+        text-align: left;
+    }
+    &_form {
+        padding: 90px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &_item {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    &_label {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    &_input {
+        background: #151515;
+        width: calc(100% - 50px);
+        padding: 15px 25px;
+        margin-top: 10px;
+    }
+    .checkbox {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+.popup.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #000000;
+    z-index: 10;
+    opacity: 1;
+    transition: $transition;
+}

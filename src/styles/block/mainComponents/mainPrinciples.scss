@@ -8,7 +8,7 @@
     }
     &-description {
         position: absolute;
-        bottom: 0;
+        bottom: 45px;
         right: 0;
         width: 300px;
         height: 200px;
@@ -38,6 +38,15 @@
         }
     }
     &_item {
+        &_title {
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 23px;
+        }
+        &_descr {
+            font-size: 18px;
+            line-height: 13px;
+        }
         &-img {
             width: 80px;
             height: 80px;
@@ -53,7 +62,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 120px;
+        padding-top: 100px;
     }
     &_item {
         display: flex;

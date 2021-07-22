@@ -1,4 +1,7 @@
-.water-supply {
+.network {
+    .title {
+        padding-bottom: 0;
+    }
     &_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -8,8 +11,8 @@
         position: relative;
         transition: $transition;
         height: 470px;
-        background: center (center / cover) no-repeat;
         text-align: center;
+        background: center (center / cover) no-repeat;
         &_wrapper {
             display: flex;
             justify-content: center;

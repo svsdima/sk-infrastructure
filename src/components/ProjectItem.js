@@ -38,6 +38,7 @@ const ProjectItem = ({ project }) => {
                 <div className="clients-projects_text">
                     <span>{project.work}</span> по адресу: {project.address}
                 </div>
+                <div className="clients-projects_more">Подробнее</div>
             </div>
         </div>
     )

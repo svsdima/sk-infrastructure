@@ -70,7 +70,7 @@ const MainPrinciples = () => {
                             </div>
                         </div>
                         <button className="btn btn-contacts">
-                            <Link to="#">Подробнее о контактах</Link>
+                            <Link to="#"><span>Подробнее о контактах</span></Link>
                         </button>
                     </div>
                     <div className="main-principles_right">

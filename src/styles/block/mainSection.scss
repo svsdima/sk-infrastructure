@@ -22,6 +22,9 @@
         }
     }
 }
+.header_without-slider {
+    display: none;
+}
 
 @import './mainComponents/mainHeader';
 @import './mainComponents/mainPrinciples';

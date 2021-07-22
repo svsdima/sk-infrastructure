@@ -73,7 +73,7 @@ export const projects = [
         _id: (Math.random() * 1234567890).toFixed(0),
         name: '',
         background: '/img/projects/5.jpg',
-        logo: '/img/projects/5-logo.svg',
+        logo: '/img/projects/6-logo.svg',
         work: `Работы по монтажу прифундаментного дренажа по адресу: `,
         address: 'ЛО, Всеволожский р-н, "Ручьи"',
         completed: false,
@@ -83,7 +83,7 @@ export const projects = [
         _id: (Math.random() * 1234567890).toFixed(0),
         name: '',
         background: '/img/projects/6.jpg',
-        logo: '/img/projects/1-logo.svg',
+        logo: '/img/projects/7-logo.svg',
         work: `Работы по монтажу прифундаментного дренажа по адресу: `,
         address: 'ЛО, Всеволожский р-н, "Ручьи"',
         completed: false,
@@ -93,17 +93,17 @@ export const projects = [
         _id: (Math.random() * 1234567890).toFixed(0),
         name: '',
         background: '/img/projects/4.jpg',
-        logo: '/img/projects/3-logo.svg',
+        logo: '/img/projects/8-logo.svg',
         work: `Работы по монтажу прифундаментного дренажа по адресу: `,
         address: 'ЛО, Всеволожский р-н, "Ручьи"',
-        completed: true,
+        completed: false,
 
     },
     {
         _id: (Math.random() * 1234567890).toFixed(0),
         name: '',
         background: '/img/projects/5.jpg',
-        logo: '/img/projects/5-logo.svg',
+        logo: '/img/projects/9-logo.svg',
         work: `Работы по монтажу прифундаментного дренажа по адресу: `,
         address: 'ЛО, Всеволожский р-н, "Ручьи"',
         completed: true,
@@ -113,7 +113,7 @@ export const projects = [
         _id: (Math.random() * 1234567890).toFixed(0),
         name: '',
         background: '/img/projects/6.jpg',
-        logo: '/img/projects/1-logo.svg',
+        logo: '/img/projects/10-logo.svg',
         work: `Работы по монтажу прифундаментного дренажа по адресу: `,
         address: 'ЛО, Всеволожский р-н, "Ручьи"',
         completed: false,
@@ -301,5 +301,104 @@ export const waterSupply = [
         _id: (Math.random() * 1234567890).toFixed(0),
         name: 'Установка запорной арматуры',
         img: '/img/water-supply/3-installation.jpg',
+    },
+];
+
+export const sewerages = [
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Земляные работы',
+        img: '/img/sewerage/1-mechanized-trenching.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Укладка трубопроводов',
+        img: '/img/sewerage/2-laying-pipelines.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство круглых железобетонных колодцев',
+        img: '/img/sewerage/3-construction-of-wells.jpg',
+    },
+];
+
+export const networks = [
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Механизированная разработка траншей',
+        img: '/img/network/1-excavation.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Подземная прокладка трубопроводов и вводы в здание',
+        img: '/img/network/2-underground-pipelines.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство каналов',
+        img: '/img/network/3-channel-arrangement.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство неподвижных опор вне камер',
+        img: '/img/network/4-device-of-supports.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство ж/б колодцев',
+        img: '/img/network/5-arrangement-of-wells.jpg',
+    },
+];
+
+export const landscapings = [
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Проезды и площадки с асфальтным покрытием',
+        img: '/img/landscaping/1-areas-with-asphalt-pavement.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство проезда с тротуарной плиткой',
+        img: '/img/landscaping/2-driveway-with-paving-slabs.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство отмостки с асфальтовым покрытием',
+        img: '/img/landscaping/3-blind-area-with-asphalt-surface.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство дорожек и площадок с набивным покрытием',
+        img: '/img/landscaping/4-tracks-with-printed-surface.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство насыпи и дренажа',
+        img: '/img/landscaping/5-drainage-device.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Строительство заборов и декоративных ограждений',
+        img: '/img/landscaping/6-decorative-fences.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Установка бордюрного камня',
+        img: '/img/landscaping/7-curbstone.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Асфальтирование тротуаров и пешеходных дорожек',
+        img: '/img/landscaping/8-walking-paths.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Устройство газонов, посадка деревьев и кустарников',
+        img: '/img/landscaping/9-planting-trees.jpg',
+    },
+    {
+        _id: (Math.random() * 1234567890).toFixed(0),
+        name: 'Укрепление берегов водоемов',
+        img: '/img/landscaping/10-banks-of-reservoirs.jpg',
     },
 ];

@@ -48,6 +48,12 @@ const MainSection = () => {
             <Footer/>
           </SwiperSlide>
         </Swiper>
+        <div className="header_without-slider">
+            <MainHeader/>
+            <MainPrinciples/>
+            <MainProjects/>
+            <Footer/>
+        </div>
       </div>
     )
 }

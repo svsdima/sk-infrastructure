@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import toggleMenu from './functions/ToggleFunction';
+import toggleMenu from './functions/ToggleMenu';
+import togglePopup from './functions/TogglePopup';
 import Menu from './Menu';
 
 
@@ -22,9 +23,9 @@ const Header = () => {
                     <div className="phone">
                         <a href="tel:+78124016495"><span>+7 (812) </span>401-64-95</a>
                     </div>
-                    <button className="btn btn-call">
+                    <button className="btn btn-call" onClick={togglePopup}>
                         <i className="fas fa-phone-alt"></i>
-                        Обратный звонок
+                        <span>Обратный звонок</span>
                     </button>
                 </div>
             </div>

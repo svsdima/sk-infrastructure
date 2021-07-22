@@ -44,6 +44,13 @@ img {
 @import './block/suppliers';
 @import './block/technics';
 @import './block/water-supply';
+@import './block/sewerage';
+@import './block/landscaping';
+@import './block/heatingNetwork';
 @import './block//doing-work.scss';
 @import './block/form';
 @import './block/footer';
+@import './block/popup';
+
+
+@import './base/media';

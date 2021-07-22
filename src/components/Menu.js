@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ScrollOnClick from './functions/ScrollOnClick';
-import toggleMenu from './functions/ToggleFunction';
+import toggleMenu from './functions/ToggleMenu';
 
 const Menu = () => {
     return (
@@ -32,10 +32,10 @@ const Menu = () => {
                     <Link to='/heating-network' >Наружные тепловые сети</Link>
                 </li>
                 <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
-                    <Link to='/' >Монтаж Ж/Б конструкции</Link>
+                    <Link to='/installation-Of-structures' >Монтаж Ж/Б конструкции</Link>
                 </li>
                 <li className="menu_link menu_link_subtitle" onClick={toggleMenu}>
-                    <Link to='/' >Благоустройство территорий</Link>
+                    <Link to='/landscaping' >Благоустройство территорий</Link>
                 </li>
                 <li className="menu_link" onClick={toggleMenu}>
                     <Link to='/projects' >Проекты</Link>

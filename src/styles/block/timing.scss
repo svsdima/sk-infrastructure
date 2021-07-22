@@ -1,18 +1,97 @@
 .timing {
-    &_wrapper {
+    padding: 65px 0 30px 0;
+    background-color: $second-dark-background;
+    margin: 70px 0 90px 0;
+    &_up {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 60px;
+    }
+    &_down {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        margin-top: 20px;
     }
     &_input {
         width: 710px;
+    }
+    &_min,
+    &_max {
+        position: absolute;
+    }
+    &_min {
+        bottom: 25px;
+        left: -10px;
+    }
+    &_max {
+        bottom: 25px;
+        right: -10px;
     }
     &_range {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         p {
             margin: 0 10px;
         }
+        input {
+            max-width: 720px;
+        }
+    }
+    &_calc {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    &_day {
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        &-dash {
+            color: $main-color;
+            width: 20px;
+            height: 2px;
+            background-color: $main-color;
+            margin: 0 20px 30px 20px;
+        }
+        &-meter {
+            font-size: 44px;
+            line-height: 28px;
+            color: $main-color;
+            margin: 0;
+            span {
+                display: block;
+            }
+
+        }
+        &-calc {
+            font-weight: 700;
+            font-size: 44px;
+            margin: 0;
+            line-height: 28px;
+            color: $main-color;
+            span {
+                display: block;
+            }
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    &_title {
+        max-width: 230px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 37px;
     }
 }

@@ -18,7 +18,7 @@ const VacancyItem = ({ vacancy }) => {
                             <div className="vacancies_requirement">
                                 <span>Требования и условия</span>
                             </div>
-                            <button className="btn">Откликнуться на вакансию</button>
+                            <button className="btn"><span>Откликнуться на вакансию</span></button>
                         </div>
                     </div>
                </div>
@@ -43,7 +43,7 @@ const VacancyItem = ({ vacancy }) => {
                             <div className="vacancies_requirement">
                                 <span>Требования и условия</span>
                             </div>
-                            <button className="btn">Откликнуться на вакансию</button>
+                            <button className="btn"><span>Откликнуться на вакансию</span></button>
                         </div>
                     </div>
                 </div>
