@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { networks } from '../data';
-import DoingWork from './DoingWork';
-import Footer from './Footer';
-import HeatingNetworkItem from './HeatingNetworkItem';
-import MainProjects from './mainComponents/MainProjects';
-import Suppliers from './Suppliers';
-import Technics from './Technics';
-import Timing from './Timing';
-import WeTakeOver from './WeTakeOver';
+import DoingWork from '../components/DoingWork';
+import Footer from '../components/Footer';
+import HeatingNetworkItem from '../components/HeatingNetworkItem';
+import MainProjects from '../components/mainComponents/MainProjects';
+import Suppliers from '../components/Suppliers';
+import Technics from '../components/Technics';
+import WeTakeOver from '../components/WeTakeOver';
+import Timing from '../components/Timing';
 
 const HeatingNetwork = () => {
     return (

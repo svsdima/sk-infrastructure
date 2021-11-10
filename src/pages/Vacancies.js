@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { vacancies } from '../data';
-import Footer from './Footer';
-import VacancyItem from './VacancyItem';
+import Footer from '../components/Footer';
+import VacancyItem from '../components/VacancyItem';
 
 const Vacancies = () => {
     return (

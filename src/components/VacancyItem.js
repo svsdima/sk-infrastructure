@@ -1,68 +1,54 @@
-import React from 'react'
+import React from 'react';
+import VacancyDescr from './VacancyDescr';
 
-const VacancyItem = ({ vacancy }) => {
+const VacancyItem = ({vacancy}) => {
+	const {name, responsibilities, requirements, conditions, img, position} =
+		vacancy;
 
-    function PositionLeft() {
-        return (
-            <div className="vacancies_left" >
-               <div className="container">
-                    <div className="vacancies_left_bg" style={{ backgroundImage: `url(${vacancy.img})`}}>
-                        <div>
-                            <h3 className="descr_title">{vacancy.name}</h3>
-                            <h4 className="descr_subtitle">Должностные обязанности:</h4>
-                            <ul className="vacancies_list">
-                                {vacancy.responsibilities.map(responsibility => (
-                                    <li className="vacancies_item">{responsibility}</li>
-                                ))}
-                            </ul>
-                            <div className="vacancies_requirement">
-                                <span>Требования и условия</span>
-                            </div>
-                            <button className="btn"><span>Откликнуться на вакансию</span></button>
-                        </div>
-                    </div>
-               </div>
-            </div>
-        )
-        
-    }
+	function PositionLeft() {
+		return (
+			<div className='vacancies_left'>
+				<div className='container'>
+					<div className='vacancies_left_wrapper'>
+						<div className='vacancies_left_descr'>
+							<VacancyDescr vacancy={vacancy} />
+						</div>
+						<div className='vacancies_left_bg'>
+							<img src={img} alt={img} />
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
 
-    function PositionRight() {
-        return (
-            <div className="vacancies_right">
-                <div className="container">
-                    <div className="vacancies_right_bg" style={{ backgroundImage: `url(${vacancy.img})`}}>
-                        <div>
-                            <h3 className="descr_title">{vacancy.name}</h3>
-                            <h4>Должностные обязанности:</h4>
-                            <ul className="vacancies_list">
-                                {vacancy.responsibilities.map(responsibility => (
-                                    <li className="vacancies_item">{responsibility}</li>
-                                ))}
-                            </ul>
-                            <div className="vacancies_requirement">
-                                <span>Требования и условия</span>
-                            </div>
-                            <button className="btn"><span>Откликнуться на вакансию</span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+	function PositionRight() {
+		return (
+			<div className='vacancies_right'>
+				<div className='container'>
+					<div className='vacancies_right_wrapper'>
+						<div className='vacancies_right_bg'>
+							<img src={img} alt={img} />
+						</div>
+						<div className='vacancies_right_descr'>
+							<VacancyDescr vacancy={vacancy} />
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
 
-    function CheckPosition() {
-        const isPosition = vacancy.position;
+	function CheckPosition() {
+		const isPosition = position;
 
-        if (isPosition === 'left') {
-            return <PositionLeft/>
-        }
-        return <PositionRight/>
-    }
+		if (isPosition === 'left') {
+			return <PositionLeft />;
+		}
+		return <PositionRight />;
+	}
 
-    return (
-        <CheckPosition/>
-    )
-}
+	return <CheckPosition />;
+};
 
-export default VacancyItem
+export default VacancyItem;

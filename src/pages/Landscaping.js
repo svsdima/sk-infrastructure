@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { landscapings } from '../data';
-import DoingWork from './DoingWork';
-import Footer from './Footer';
-import LandscapingItem from './LandscapingItem';
-import MainProjects from './mainComponents/MainProjects';
-import Suppliers from './Suppliers';
-import Technics from './Technics';
-import Timing from './Timing';
-import WeTakeOver from './WeTakeOver';
+import DoingWork from '../components/DoingWork';
+import Footer from '../components/Footer';
+import LandscapingItem from '../components/LandscapingItem';
+import MainProjects from '../components/mainComponents/MainProjects';
+import Suppliers from '../components/Suppliers';
+import Technics from '../components/Technics';
+import Timing from '../components/Timing';
+import WeTakeOver from '../components/WeTakeOver';
 
 const Landscaping = () => {
     return (

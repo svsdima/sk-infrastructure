@@ -1,36 +1,36 @@
-$main-color: #E4B564;
-$second-color: #D6AF76;
-$background-color: rgba(#B18037, 0.80);
+$maxWidthContainer: 1640px;
+$main-color: #e4b564;
+$second-color: #d6af76;
+$background-color: rgba(#b18037, 0.8);
 $dark-background: #151515;
-$second-dark-background: #0E0E0E;
+$second-dark-background: #0e0e0e;
 $checked-color: #7a6237;
-$transition: all .3s ease;
+$transition: all 0.3s ease;
 $text-color: #fff;
-$project-complete: #69CE6D;
-$project-not-complete: #E4B564;
+$project-complete: #69ce6d;
+$project-not-complete: #e4b564;
 $navigation: #606060;
 
 @import './base/_libs';
 @import './base/_fonts';
 @import './base/_global';
 
-
 * {
-    font-family: Circe;
-    color: $text-color;
+	font-family: Circe;
+	color: $text-color;
 }
 body {
-    background-color: $dark-background;
+	background-color: $dark-background;
 }
 img {
-    display: inline-block;
-    width: 100%;
+	display: inline-block;
+	width: 100%;
 }
 .container {
-    max-width: 1600px;
-    margin: 0 auto;
-    width: 90%;
-    position: relative;
+	max-width: $maxWidthContainer;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
 }
 
 @import './block/header';
@@ -51,6 +51,5 @@ img {
 @import './block/form';
 @import './block/footer';
 @import './block/popup';
-
 
 @import './base/media';

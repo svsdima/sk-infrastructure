@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { projects } from '../data';
-import Footer from './Footer';
-import ProjectItem from './ProjectItem';
+import Footer from '../components/Footer';
+import ProjectItem from '../components/ProjectItem';
 
 const Projects = () => {
     return (
@@ -19,7 +19,7 @@ const Projects = () => {
                         <div className="clients-projects_list">
                             {projects.map(project => (
                                 <div key={project._id} className="clients-projects_item" style={{ backgroundImage: `url(${project.background})` }}>
-                                    <ProjectItem project={project}/>
+                                    <ProjectItem project={project} />
                                 </div>
                             ))}
                         </div>

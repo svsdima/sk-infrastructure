@@ -1,53 +1,160 @@
 .vacancies {
-    margin-top: 120px;
-    padding-top: 30px;
-    background-color: $second-dark-background;
-    .title {
-        padding-bottom: 0;
-    }
-    &_left {
-        background-color: #0E0E0E;
-        &_bg {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: right bottom no-repeat;
-            min-height: 830px;
-            text-align: left;
-        }
-    }
-    &_right {
-        background-color: #151515;
-        &_bg {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            background: left bottom no-repeat;
-            min-height: 830px;
-            text-align: left;
-        }
-    }
-    &_list {
-        padding-left: 10px;
-        max-width: 730px;
-        margin: 0;
-    }
-    &_item {
-        list-style-type: none;
-        position: relative;
-        font-size: 16px;
-        line-height: 28px;
-        &::before {
-            content: "";
-            position: absolute;
-            border-radius: 250px;
-            width: 7px;
-            height: 7px;
-            left: -10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: $main-color;
-        }
-    }
+	margin-top: 120px;
+	padding-top: 30px;
+	background-color: $second-dark-background;
+
+	.title {
+		padding-bottom: 0;
+	}
+	&_right_wrapper,
+	&_left_wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&_left {
+		background-color: #0e0e0e;
+		&_wrapper {
+			// display: grid;
+			// grid-template-columns: 1fr 1fr;
+			// grid-gap: 25px;
+		}
+		&_bg {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			background: right bottom no-repeat;
+			text-align: left;
+		}
+		&_descr {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			.btn {
+				margin-top: 30px;
+			}
+		}
+	}
+	&_right {
+		background-color: #151515;
+		&_wrapper {
+			// display: grid;
+			// grid-template-columns: 1fr 1fr;
+			// grid-gap: 40px;
+		}
+		&_bg {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: flex-end;
+			background: left bottom no-repeat;
+			text-align: left;
+		}
+		&_descr {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			.btn {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	&_right,
+	&_left {
+		padding: 50px 0 0 0;
+	}
+	&_left_bg,
+	&_right_bg {
+		max-width: 750px;
+	}
+	&_right_descr,
+	&_left_descr {
+		padding-bottom: 50px;
+	}
+	&_list {
+		padding-left: 10px;
+		max-width: 730px;
+		margin: 0;
+	}
+	&_item {
+		list-style-type: none;
+		position: relative;
+		font-size: 16px;
+		line-height: 35px;
+		&::before {
+			content: '';
+			position: absolute;
+			border-radius: 250px;
+			width: 7px;
+			height: 7px;
+			left: -13px;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: $main-color;
+		}
+		margin: 5px 0;
+	}
+	&_requirement {
+		&_title {
+			margin: 10px 0;
+			font-size: 18px;
+			line-height: 30px;
+			color: $main-color;
+			position: relative;
+			cursor: pointer;
+			transition: $transition;
+			&:before {
+				content: '';
+				width: 0;
+				height: 1px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background: $main-color;
+				transition: $transition;
+			}
+			&:after {
+				content: '';
+				width: 0;
+				height: 1px;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				background: $main-color;
+				transition: $transition;
+			}
+		}
+		&_list {
+			ul {
+				padding-left: 10px;
+				max-width: 730px;
+				margin: 0;
+			}
+		}
+		&_item {
+			list-style-type: none;
+			position: relative;
+			font-size: 16px;
+			line-height: 35px;
+			&::before {
+				content: '';
+				position: absolute;
+				border-radius: 250px;
+				width: 7px;
+				height: 7px;
+				left: -10px;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: $main-color;
+			}
+		}
+		&_descr {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
 }

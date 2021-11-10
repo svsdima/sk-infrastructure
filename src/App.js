@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Contacts from './components/Contacts';
+// Components
 import Header from './components/Header';
-import HeatingNetwork from './components/HeatingNetwork';
-import InstallationOfStructures from './components/InstallationOfStructures';
-import Landscaping from './components/Landscaping';
-import MainSection from './components/MainSection';
+// Pages
+import MainSection from './pages/MainSection';
+import Vacancies from './pages/Vacancies';
+import WaterSupply from './pages/WaterSupply';
 import Popup from './components/Popup';
-import Projects from './components/Projects';
-import Sewerage from './components/Sewerage';
-import Vacancies from './components/Vacancies';
-import WaterSupply from './components/WaterSupply';
+import Projects from './pages/Projects';
+import Contacts from './pages/Contacts';
+import Sewerage from './pages/Sewerage';
+import HeatingNetwork from './pages/HeatingNetwork';
+import InstallationOfStructures from './pages/InstallationOfStructures';
+import Landscaping from './pages/Landscaping';
+// Animation
+
+
 import './styles/app.scss';
 
 function App() {

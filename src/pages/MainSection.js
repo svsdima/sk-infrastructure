@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 
-import Footer from './Footer';
+import Footer from '../components/Footer';
 
 
 // import Swiper core and required modules
@@ -14,9 +14,9 @@ import SwiperCore, {
   Mousewheel,Pagination
 } from 'swiper/core';
 
-import MainHeader from "./mainComponents/MainHeader";
-import MainPrinciples from "./mainComponents/MainPrinciples";
-import MainProjects from "./mainComponents/MainProjects";
+import MainHeader from "../components/mainComponents/MainHeader";
+import MainPrinciples from "../components/mainComponents/MainPrinciples";
+import MainProjects from "../components/mainComponents/MainProjects";
 
 // install Swiper modules
 SwiperCore.use([Mousewheel,Pagination]);

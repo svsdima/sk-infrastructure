@@ -1,60 +1,52 @@
 .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: absolute;
-    height: 100vh;
-    min-width: 600px;
-    z-index: 25;
-    top: 0;
-    left: -100%;
-    background: $dark-background;
-    transition: $transition;
-    opacity: 0;
-    &_close {
-        position: absolute;
-        top: 8%;
-        left: 15%;
-        cursor: pointer;
-        padding: 10px;
-        transition: $transition;
-        i {
-            transition: $transition;
-            font-size: 25px;
-        }
-        &:hover {
-            i {
-                color: $main-color;
-            }
-        }
-    }
-    &_list {
-        list-style-type: none;
-        position: absolute;
-        top: 8%;
-        left: 20%;
-    }
-    &_link {
-        font-size: 24px;
-        transition: $transition;
-        line-height: 56px;
-        a {
-            transition: $transition;
-            text-decoration: none;
-            &:hover {
-                color: $main-color;
-            }
-        }
-        &_subtitle {
-            font-weight: 200;
-            font-size: 20px;
-            line-height: 49px;
-        }
-    }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	position: absolute;
+	height: 100vh;
+	min-width: 600px;
+	z-index: 25;
+	top: 0;
+	left: -100%;
+	background: $dark-background;
+	transition: $transition;
+	opacity: 0;
+	&_close {
+		position: absolute;
+		top: 8%;
+		left: 15%;
+		cursor: pointer;
+		padding: 10px;
+		transition: $transition;
+		i {
+			transition: $transition;
+			font-size: 25px;
+		}
+	}
+	&_list {
+		list-style-type: none;
+		position: absolute;
+		top: 8%;
+		left: 20%;
+	}
+	&_link {
+		font-size: 24px;
+		transition: $transition;
+		line-height: 56px;
+		a {
+			transition: $transition;
+			text-decoration: none;
+		}
+		&_subtitle {
+			font-weight: 200;
+			font-size: 20px;
+			line-height: 49px;
+		}
+	}
 }
 .menu.active {
-    transition: $transition;
-    opacity: 1;
-    left: 0;
+	transition: $transition;
+	opacity: 1;
+	left: 0;
 }

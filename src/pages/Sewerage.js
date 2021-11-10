@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { sewerages } from '../data';
-import DoingWork from './DoingWork';
-import Footer from './Footer';
-import MainProjects from './mainComponents/MainProjects';
-import SewerageItem from './SewerageItem';
-import Suppliers from './Suppliers';
-import Technics from './Technics';
-import Timing from './Timing';
-import WeTakeOver from './WeTakeOver';
+import DoingWork from '../components/DoingWork';
+import Footer from '../components/Footer';
+import MainProjects from '../components/mainComponents/MainProjects';
+import SewerageItem from '../components/SewerageItem';
+import Suppliers from '../components/Suppliers';
+import Technics from '../components/Technics';
+import WeTakeOver from '../components/WeTakeOver';
+import Timing from '../components/Timing';
 
 const Sewerage = () => {
     return (

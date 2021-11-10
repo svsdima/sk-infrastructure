@@ -1,135 +1,131 @@
 .title {
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 28px;
-    padding: 30px 0 80px 0;
-    margin: 0;
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 28px;
+	padding: 30px 0 80px 0;
+	margin: 0;
 }
 .subtitle {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    padding-bottom: 25px;
-    margin: 0;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+	padding-bottom: 25px;
+	margin: 0;
 }
 .btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $main-color;
-    background: transparent;
-    padding: 10px 25px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: $transition;
-    span {
-        color: $main-color;    
-        font-size: 18px;
-        transition: $transition;
-        line-height: 30px;
-    }
-    a {
-        color: $main-color;
-        text-decoration: none;
-    }
-    &-contacts {
-        margin-top: 40px;
-        a {
-            color: $main-color;
-            text-decoration: none;
-        }
-    }
-    &-projects {
-        width: 180px;
-    }
-    &-call {
-        i {
-            color: $main-color;
-            margin-right: 8px;
-            transition: $transition;
-        }
-    }
-    &:hover {
-        background: $main-color;
-        span {
-            color: #000000;
-        }
-        i {
-            color: #000000;
-        }
-    }
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $main-color;
+	background: transparent;
+	padding: 10px 25px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: $transition;
+	position: relative;
+	top: 0;
+	&:active {
+		top: 5px;
+	}
+	span {
+		color: $main-color;
+		font-size: 18px;
+		transition: $transition;
+		line-height: 30px;
+	}
+	a {
+		color: $main-color;
+		text-decoration: none;
+	}
+	&-contacts {
+		margin-top: 40px;
+		a {
+			color: $main-color;
+			text-decoration: none;
+		}
+	}
+	&-projects {
+		width: 180px;
+	}
+	&-call {
+		i {
+			color: $main-color;
+			margin-right: 8px;
+			transition: $transition;
+		}
+	}
 }
 .links {
-    color: $navigation;
-    :first-child {
-        padding-left: 0;
-    }
-    a, 
-    span {
-        color: $navigation;
-    } 
-    a {
-        padding: 0 10px;
-    }
-    span {
-        padding-left: 10px;
-    }
+	color: $navigation;
+	:first-child {
+		padding-left: 0;
+	}
+	a,
+	span {
+		color: $navigation;
+	}
+	a {
+		padding: 0 10px;
+	}
+	span {
+		padding-left: 10px;
+	}
 }
 .descr {
-    &_title {
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 28px;
-    }
-    &_list {
-        list-style-type: none;
-    }
-    &_link {
-        padding-bottom: 30px;
-        a {
-            text-decoration: none;
-        }
-        i {
-            color: $main-color;
-        }
-        span {
-            padding-left: 15px;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 28px;
-        }
-    }
+	&_title {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 28px;
+	}
+	&_list {
+		list-style-type: none;
+	}
+	&_link {
+		padding-bottom: 30px;
+		a {
+			text-decoration: none;
+		}
+		i {
+			color: $main-color;
+		}
+		span {
+			padding-left: 15px;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
 }
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    &:before {
-        content: '';
-        position: absolute;
-        width: 60%;
-        height: 2px;
-        background: $main-color;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    }
-    &:after {
-        content: '';
-        position: absolute;
-        width: 60%;
-        height: 2px;
-        background: $main-color;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-    }
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 60%;
+		height: 2px;
+		background: $main-color;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 60%;
+		height: 2px;
+		background: $main-color;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	}
 }
 .sewerage,
 .water-supply,
 .network {
-    margin-top: 150px;
+	margin-top: 150px;
 }

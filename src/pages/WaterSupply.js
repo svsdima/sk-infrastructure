@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import DoingWork from '../components/DoingWork';
+import Footer from '../components/Footer';
+import MainProjects from '../components/mainComponents/MainProjects';
+import Suppliers from '../components/Suppliers';
+import Technics from '../components/Technics';
+import Timing from '../components/Timing';
+import WeTakeOver from '../components/WeTakeOver';
+import WaterSupplyItem from '../components/WaterSupplyItem';
 import { waterSupply } from '../data';
-import DoingWork from './DoingWork';
-import Footer from './Footer';
-import MainProjects from './mainComponents/MainProjects';
-import Suppliers from './Suppliers';
-import Technics from './Technics';
-import Timing from './Timing';
-import WaterSupplyItem from './WaterSupplyItem';
-import WeTakeOver from './WeTakeOver';
 
 
 const WaterSupply = () => {
